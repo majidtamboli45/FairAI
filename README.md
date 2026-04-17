@@ -202,3 +202,58 @@ COPY index.html /usr/share/nginx/html/index.html
 
 run :- docker-compose up –build
 
+
+_________________________________________________________________________________________________________________________________________________________
+
+Jenkins :- 9
+
+create project folder 
+create app.py(in vscode)
+
+in vscode terminal:
+git init
+git add .
+git commit -m "first commit"
+
+on github create repo
+
+copy commands like
+
+git branch -M main
+git remote add origin
+git push  -u origin
+
+run that permission commnad
+
+sudo chown 
+
+on jenkins 
+
+create new item
+select free style project
+
+ok
+
+in triggers:-
+select poll SCM
+Add H/1 * * * *
+
+in build steps select execute shell
+
+in execute shell
+
+cd "file path"(which is obtained from the vscode terminal by running the pwd)
+
+save
+
+build now
+
+console output
+
+change the code in local machine then also commit it to github so the changes get reflected on jenkins
+
+
+__________________________________________________________________________________________________________________________________________________
+
+
+
