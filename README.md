@@ -268,4 +268,12 @@ minikube start --driver=docker
 kubectl get node
 
 
+on kubernet in yml file paste give code
+
+check the 2 pods and deployment proper
+
+then again create another yml
+
+
+
 
