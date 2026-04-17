@@ -200,3 +200,5 @@ COPY index.html /usr/share/nginx/html/index.html
 
 # 3] docker-compose.yml
 
+run :- docker-compose up –build
+
