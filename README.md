@@ -274,6 +274,27 @@ check the 2 pods and deployment proper
 
 then again create another yml
 
+check the services
+
+on another terminal of vscode 
+run
+
+minikube service vsec-service
+
+open another terminal
+
+curl -X POST http://127.0.0.1:33071/predict \
+-H "Content-Type: application/json" \
+-d '{"number":10}'
+
+scale resorces by clicking on scale resources
+
+
+
+
+
+
+
 
 
 
