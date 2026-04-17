@@ -152,3 +152,8 @@ git log --oneline
 ______________________________________________________________________________________________
 
 jenkins password Reset :- sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
+______________________________________________________________________________________
+
+5 requirement.txt :- flask,numpy
