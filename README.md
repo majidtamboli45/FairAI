@@ -1,6 +1,7 @@
 GitHub Practical :- 1
 
 git config --global user.name "majidtamboli45"
+
 git config --global user.email "majidtamboli45@gmail.com"
 
 mkdir P1
