@@ -151,7 +151,7 @@ git log --oneline
 
 ______________________________________________________________________________________________
 
-jenkins password Reset :- sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+4] jenkins password Reset :- sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
 ______________________________________________________________________________________
@@ -166,4 +166,37 @@ curl -X POST http://localhost:5000/predict \
 -H "Content-Type: application/json" \
 -d "{\"number\": 5}"
 
+
+
+_________________________________________________________________________________________________________________
+
+6] 
+# 1]backend:-
+1]app.py
+2]requirements.txt(flask,pymango)
+3] Dockerfile:-
+FROM python:3.9
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY app.py .
+CMD ["python", "app.py"]
+
+# 2] Frontend
+1]index.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Docker App</title>
+</head>
+<body>
+<h1>AI Docker Application</h1>
+<p>Frontend running in Nginx container.</p>
+</body>
+</html>
+2]Dockerfile
+FROM nginx:alpine 
+COPY index.html /usr/share/nginx/html/index.html
+
+# 3] docker-compose.yml
 
