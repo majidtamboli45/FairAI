@@ -157,3 +157,13 @@ jenkins password Reset :- sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ______________________________________________________________________________________
 
 5 requirement.txt :- flask,numpy
+
+docker build -t my-ai-app .
+
+docker run -p 5000:5000 my-ai-app 
+
+curl -X POST http://localhost:5000/predict \
+-H "Content-Type: application/json" \
+-d "{\"number\": 5}"
+
+
