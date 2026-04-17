@@ -256,4 +256,15 @@ change the code in local machine then also commit it to github so the changes ge
 __________________________________________________________________________________________________________________________________________________
 
 
+minicube - 7
+
+docker --version
+
+minikube version
+
+minikube start --driver=docker
+
+kubectl get node
+
+
 
