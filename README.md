@@ -1,3 +1,63 @@
+# ⚖️ Fair AI Dataset Analyzer
+
+## 📌 Description
+The Fair AI Dataset Analyzer is a tool designed to analyze datasets (in CSV format) for potential biases and fairness issues. It helps identify imbalances across sensitive attributes such as gender, race, age, etc., ensuring ethical and responsible AI model development.
+
+---
+
+## 🎯 Objectives
+- Detect bias in datasets
+- Analyze distribution of sensitive attributes
+- Ensure fairness before model training
+- Promote responsible AI practices
+
+---
+
+## 📁 File Information
+- **Dataset Format:** CSV (Comma-Separated Values)
+- **Supported Encoding:** UTF-8
+- **Delimiter:** Comma (,)
+
+---
+
+## 🧾 Dataset Requirements
+The dataset should contain:
+- **Features (independent variables)**
+- **Target/Label column**
+- **Sensitive attributes** (e.g., gender, race, age)
+
+---
+
+## 📊 Example Dataset Structure
+
+| Column Name | Data Type | Description |
+|------------|----------|-------------|
+| id         | Integer  | Unique identifier |
+| gender     | String   | Male/Female/Other |
+| age        | Integer  | Age of individual |
+| income     | Float    | Income level |
+| outcome    | Binary   | Model prediction (0/1) |
+
+---
+
+## 📈 Sample Data
+
+```csv
+id,gender,age,income,outcome
+1,Male,25,50000,1
+2,Female,30,60000,0
+3,Female,22,45000,1
+4,Male,40,80000,0
+
+
+
+______________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
 GitHub Practical :- 1
 
 git config --global user.name "majidtamboli45"
