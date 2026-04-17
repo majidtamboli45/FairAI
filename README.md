@@ -5,14 +5,17 @@ git config --global user.name "majidtamboli45"
 git config --global user.email "majidtamboli45@gmail.com"
 
 mkdir P1
+
 cd P1
 
 git init
 
 echo "# First Practical Implementation" > README.md
+
 touch .gitignore
 
 git add .
+
 git commit -m "Initial commit"
 
 git branch -M main
